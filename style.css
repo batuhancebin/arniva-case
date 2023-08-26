@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: aliceblue;
+}
+
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+}
+
+.sidebar p& p a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar li {
+  margin-left: 0px;
+  list-style: none;
+  padding: 7px;
+}
+
+.sidebar li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+.sidebar li a:hover {
+  background-color: #f1f1f1;
+}
+
+.sidebar ul {
+  padding: 0px;
+  margin: 0px;
+}
