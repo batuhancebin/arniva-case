@@ -7,49 +7,98 @@
     <title>Arniva Yazılım</title>
   </head>
   <body>
-    <div class="container">
-      <div class="sidebar">
-        <p class="sidebarAdSoyad">Hoşgeldiniz Sayın Ad Soyad</p>
-        <div class="menu">
-          <p><a href="#">Dashboard</a></p>
-          <ul>
-            <li><a href="#">Tanıtımlar</a></li>
-            <li><a href="#">Bölgeler</a></li>
-            <li><a href="#">Sektörler</a></li>
-            <li><a href="#">Duyurular</a></li>
-            <li><a href="#">Bannerlar</a></li>
-            <li><a href="#">Destek Başlıkları</a></li>
-            <li><a href="#">Canlı Destek</a></li>
-          </ul>
-        </div>
-        <div class="isletmeler">
-          <h4>İşletmeler</h4>
-          <ul>
-            <li><a href="#">İşletmeler</a></li>
-            <li><a href="#">İşletme Ekleme Yetkisi</a></li>
-          </ul>
-        </div>
-        <div class="rezervasyonlar">
-          <h4>Rezervasyonlar</h4>
-          <ul>
-            <li><a href="#">Tüm Rezervasyonlar</a></li>
-            <li><a href="#">Onay Bekleyen</a></li>
-            <li><a href="#">Rededilen</a></li>
-            <li><a href="#">İptal Edilen</a></li>
-            <li><a href="#">Onl. Ödeme Bekleyen</a></li>
-          </ul>
-        </div>
-        <div class="onOnayListeleri">
-          <h4>Ön Onay Listeleri</h4>
-          <ul>
-            <li><a href="#">Nakil Rezervasyon</a></li>
-            <li><a href="#">Alışveriş Satışları</a></li>
-            <li><a href="#">Muhasebe</a></li>
-            <li><a href="#">Hesaplar</a></li>
-            <li><a href="#">Diğer</a></li>
-          </ul>
-        </div>
+    <div class="sidebar">
+      <p class="sidebarAdSoyad">Hoşgeldiniz Sayın Ad Soyad</p>
+      <div class="menu">
+        <div class="button-container"></div>
+        <script>
+          var buttonData = [
+            { label: "Dashboard", link: "#" },
+            { label: "Tanıtımlar", link: "#" },
+            { label: "Bölgeler", link: "#" },
+            { label: "Sektörler", link: "#" },
+            { label: "Duyurular", link: "#" },
+            { label: "Bannerlar", link: "#" },
+            { label: "Destek Başlıkları", link: "#" },
+            { label: "Canlı Destek", link: "#" },
+          ];
+          var buttonContainer = document.querySelector(".button-container");
+          for (var i = 0; i < buttonData.length; i++) {
+            var button = document.createElement("button");
+            button.textContent = buttonData[i].label;
+            button.setAttribute(
+              "onclick",
+              "window.location.href='" + buttonData[i].link + "'"
+            );
+            buttonContainer.appendChild(button);
+          }
+        </script>
       </div>
+      <div class="isletmeler">
+        <h4>İşletmeler</h4>
+      </div>
+      <script>
+        var isletmeler = [
+          { label: "İşletmeler", link: "#" },
+          { label: "İşletme Ekleme Yetkisi", link: "#" },
+        ];
+        var isletmelerContainer = document.querySelector(".isletmeler");
+        for (var i = 0; i < isletmeler.length; i++) {
+          var button = document.createElement("button");
+          button.textContent = isletmeler[i].label;
+          button.setAttribute(
+            "onclick",
+            "window.location.href='" + isletmeler[i].link + "'"
+          );
+          isletmelerContainer.appendChild(button);
+        }
+      </script>
+      <div class="rezervasyonlar">
+        <h4>Rezervasyonlar</h4>
+      </div>
+      <script>
+        var rezervasyonlar = [
+          { label: "Tüm Rezervasyonlar", link: "#" },
+          { label: "Onay Bekleyen", link: "#" },
+          { label: "Rededilen", link: "#" },
+          { label: "İptal Edilen", link: "#" },
+          { label: "Onl. Ödeme Bekleyen", link: "#" },
+        ];
+        var rezervasyonlarContainer = document.querySelector(".rezervasyonlar");
+        for (var i = 0; i < rezervasyonlar.length; i++) {
+          var button = document.createElement("button");
+          button.textContent = rezervasyonlar[i].label;
+          button.setAttribute(
+            "onclick",
+            "window.location.href='" + rezervasyonlar[i].link + "'"
+          );
+          rezervasyonlarContainer.appendChild(button);
+        }
+      </script>
+      <div class="onOnayListeleri">
+        <h4>Ön Onay Listeleri</h4>
+      </div>
+      <script>
+        var onOnayListeleri = [
+          { label: "Nakil Rezervasyon", link: "#" },
+          { label: "Alışveriş Satışları", link: "#" },
+          { label: "Muhasebe", link: "#" },
+          { label: "Hesaplar", link: "#" },
+          { label: "Diğer", link: "#" },
+        ];
+        var onOnayListeleriContainer =
+          document.querySelector(".onOnayListeleri");
+        for (var i = 0; i < onOnayListeleri.length; i++) {
+          var button = document.createElement("button");
+          button.textContent = onOnayListeleri[i].label;
+          button.setAttribute(
+            "onclick",
+            "window.location.href='" + onOnayListeleri[i].link + "'"
+          );
+          onOnayListeleriContainer.appendChild(button);
+        }
+      </script>
     </div>
+    <div class="container"></div>
   </body>
 </html>

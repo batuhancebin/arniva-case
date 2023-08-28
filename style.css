@@ -1,42 +1,50 @@
+body{
+  background-color: #f5f4f9;
+  margin: 0px;
+  padding: 0px;
+}
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: aliceblue;
+  background-color: #f5f4f9;
+  padding: 0px;
+  margin: 0px;
 }
 
 .sidebar {
+  position: absolute;
   width: 200px;
   height: 100vh;
   display: flex;
   background-color: white;
   flex-direction: column;
+  color: rgb(104, 104, 104);
+  overflow: hidden;
+  padding-left: 5px;
 }
-
-.sidebar p& p a {
-  text-align: center;
-  text-decoration: none;
+.sidebarAdSoyad {
+  display: flex;
   color: black;
 }
-
-.sidebar li {
-  margin-left: 0px;
-  list-style: none;
-  padding: 7px;
+.sidebar h4 {
+  margin-bottom: 1px;
 }
 
-.sidebar li a {
-  text-decoration: none;
-  color: black;
+.sidebar button{
+  background-color: white;
+  border: none;
+  color: rgb(104, 104, 104);
+  padding: 0px;
+  margin: 0px;
+  font-size: 15px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
   padding: 10px;
 }
 
-.sidebar li a:hover {
-  background-color: #f1f1f1;
-}
-
-.sidebar ul {
-  padding: 0px;
-  margin: 0px;
+.sidebar button:hover {
+  background-color: #e7e7ff;
 }
